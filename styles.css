@@ -10,20 +10,30 @@ html, body {
     width: 100%;
 }
 
-#background-img {
+body {
+    display: flex;
+}
+
+#img-div {
+    height: 100%;
+    width: 35%;
+    /*
+    background-image: url("iceland-geyser-1.jpg");
+    background-repeat: no-repeat;
+    */
+}
+
+#background {
     height: 100%;
     width: 100%;
-    position: absolute;
-    z-index: -1;
-    transform: translateX(max(-27%, -500px));
-    background-image: url("https://media.istockphoto.com/id/1237882550/photo/strokkur-geyser-iceland.webp?s=2048x2048&w=is&k=20&c=2z_7jLpZlHI1r_e8LgJwA4Rn-krrVpFen9gQsVmCFQE=");
 }
+
 
 #banner {
     position: absolute;
     top: 20%;
-    background-color: black;
-    opacity: 0.05;
+    background-color: #222255;
+    opacity: 0.3;
     height: 15%;
     width: 100%;
     min-height: 100px;
@@ -33,10 +43,8 @@ html, body {
 form {
     width: 65%;
     height: 100%;
-    margin-left: 35%;
     min-width: 600px;
     text-align: left;
-    border: 2px solid red;
     background-color: white;
     z-index: 0;
 }
